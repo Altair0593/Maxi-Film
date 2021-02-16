@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+import { HYDRATE } from 'next-redux-wrapper';
 
 const initialState = {
     count: 0,
@@ -10,8 +11,14 @@ const initialState = {
 
 function reducer(state = initialState, action) {
     switch (action.type) {
+    case HYDRATE: {
+        return {
+            ...state,
+            ...action.payload.xz,
+        };
+    }
     case "aaa": {
-        return { ...state, aaa: "aaa" };
+        return { ...state, aaa: action.payload };
     }
     default:
         return { ...state };
