@@ -1,3 +1,4 @@
 {
-  "host_api": "https://www.themoviedb.org/3"
+  "host_api": "https://api.themoviedb.org/3",
+  "popularMovies": "/movie/popular"
 }
