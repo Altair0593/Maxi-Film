@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
-    "downlevelIteration": true,
+        "downlevelIteration": true,
         "lib": [
-        "dom",
-        "dom.iterable",
-        "esnext"
-    ],
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
         "allowJs": true,
         "skipLibCheck": true,
         "alwaysStrict": true,
@@ -23,23 +23,25 @@
         "strictNullChecks":false,
         "baseUrl": "./",
         "paths": {
-        "images/*": ["public/static/*"],
+            "images/*": ["public/static/*"],
             "src/*": [
-            "./src/*"
-        ],
-    },
-    "target": "es5",
+                "./src/*"
+            ],
+            "actions/*": [
+                "./src/redux/actions*"
+            ]
+        },
+        "target": "es5",
         "strict": true,
         "jsx": "preserve"
-},
+    },
     "exclude": [
-    "node_modules",
-    "**/*.js",
-    "**/*.jsx",
-],
+        "node_modules",
+        "**/*.js",
+        "**/*.jsx",
+    ],
     "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-]
+        "**/*.ts",
+        "**/*.tsx"
+    ]
 }
